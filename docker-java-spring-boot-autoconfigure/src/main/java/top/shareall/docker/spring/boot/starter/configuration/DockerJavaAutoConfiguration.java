@@ -44,15 +44,12 @@ public class DockerJavaAutoConfiguration {
             builder.withRegistryPassword(dockerClientProperties.getRegistryPassword());
         if (!StringUtils.isEmpty(dockerClientProperties.getRegistryUsername()))
             builder.withRegistryUsername(dockerClientProperties.getRegistryUsername());
-        if (!StringUtils.isEmpty(dockerClientProperties.getDockerCertPath())) {
+        if (!StringUtils.isEmpty(dockerClientProperties.getDockerCertPath()))
             builder.withDockerCertPath(dockerClientProperties.getDockerCertPath());
-        }
-        if (!StringUtils.isEmpty(dockerClientProperties.getApiVersion())) {
+        if (!StringUtils.isEmpty(dockerClientProperties.getApiVersion()))
             builder.withApiVersion(dockerClientProperties.getApiVersion());
-        }
-        if ((!StringUtils.isEmpty(dockerClientProperties.getDockerTlsVerify()))) {
+        if (!StringUtils.isEmpty(dockerClientProperties.getDockerTlsVerify()))
             builder.withDockerTlsVerify(dockerClientProperties.getDockerTlsVerify());
-        }
         if (!CollectionUtils.isEmpty(dockerClientProperties.getConfig()))
             builder.withProperties(dockerClientProperties.getConfig());
         return builder.build();

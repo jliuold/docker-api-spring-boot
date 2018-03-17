@@ -2,16 +2,25 @@ package top.shareall.docker.spring.boot.starter.configuration;
 
 import com.github.dockerjava.api.DockerClient;
 import com.github.dockerjava.core.DockerClientBuilder;
+import com.github.dockerjava.core.DockerClientConfig;
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.util.Assert;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
-@SpringBootApplication
-@RunWith(SpringJUnit4ClassRunner.class)
+
+@SpringBootTest(classes = {DockerJavaAutoConfigurationTest.class, DockerJavaAutoConfiguration.class})
+@RunWith(SpringRunner.class)
+@EnableAutoConfiguration
 public class DockerJavaAutoConfigurationTest {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(DockerJavaAutoConfigurationTest.class);
 
     @Autowired
     DockerClient dockerClient;
@@ -19,14 +28,31 @@ public class DockerJavaAutoConfigurationTest {
     @Autowired
     DockerClientBuilder dockerClientBuilder;
 
+    @Autowired
+    DockerClientConfig dockerClientConfig;
+
+    @Value("${docker-java.docker-host}")
+    String dockerHost;
+
+    @Test
+    public void dockerHost() {
+        LOGGER.debug(dockerHost);
+        Assert.assertNotNull(dockerHost);
+    }
+
+    @Test
+    public void dockerClientConfig() {
+        Assert.assertNotNull(dockerClientConfig);
+    }
+
     @Test
     public void dockerClient() throws Exception {
-        Assert.notNull(dockerClient, "docker client注入失败");
+        Assert.assertNotNull(dockerClient);
     }
 
     @Test
     public void dockerClientBuilder() {
-        Assert.notNull(dockerClientBuilder, "dockerClientBuilder注入失败");
+        Assert.assertNotNull(dockerClientBuilder);
     }
 
 }

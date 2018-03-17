@@ -1,9 +1,16 @@
 package top.shareall.docker.spring.boot.starter.configuration;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.Properties;
 
+/**
+ * The Spring Boot Properties for Docker java
+ *
+ * @author liujichun
+ */
+@Configuration
 @ConfigurationProperties(prefix = "docker-java")
 public class DockerClientProperties {
 
@@ -89,7 +96,6 @@ public class DockerClientProperties {
     public void setDockerConfig(String dockerConfig) {
         this.dockerConfig = dockerConfig;
     }
-
 
     public String getApiVersion() {
         return apiVersion;
