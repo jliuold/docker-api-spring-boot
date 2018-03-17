@@ -1,7 +1,6 @@
 package top.shareall.docker.spring.boot.starter.configuration;
 
 import com.github.dockerjava.api.DockerClient;
-import com.github.dockerjava.api.model.Info;
 import com.github.dockerjava.core.DockerClientBuilder;
 import com.github.dockerjava.core.DockerClientConfig;
 import org.junit.Assert;
@@ -39,8 +38,6 @@ public class DockerJavaAutoConfigurationTest {
     @Test
     public void dockerClient() throws Exception {
         Assert.assertNotNull(dockerClient);
-        Info exec = dockerClient.infoCmd().exec();
-        System.out.println(exec);
     }
 
     @Test
