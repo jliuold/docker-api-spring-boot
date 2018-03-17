@@ -1,6 +1,7 @@
 package top.shareall.docker.spring.boot.starter.configuration;
 
 import com.github.dockerjava.api.DockerClient;
+import com.github.dockerjava.api.model.Info;
 import com.github.dockerjava.core.DockerClientBuilder;
 import com.github.dockerjava.core.DockerClientConfig;
 import org.junit.Assert;
@@ -9,7 +10,6 @@ import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -31,15 +31,6 @@ public class DockerJavaAutoConfigurationTest {
     @Autowired
     DockerClientConfig dockerClientConfig;
 
-    @Value("${docker-java.docker-host}")
-    String dockerHost;
-
-    @Test
-    public void dockerHost() {
-        LOGGER.debug(dockerHost);
-        Assert.assertNotNull(dockerHost);
-    }
-
     @Test
     public void dockerClientConfig() {
         Assert.assertNotNull(dockerClientConfig);
@@ -48,6 +39,8 @@ public class DockerJavaAutoConfigurationTest {
     @Test
     public void dockerClient() throws Exception {
         Assert.assertNotNull(dockerClient);
+        Info exec = dockerClient.infoCmd().exec();
+        System.out.println(exec);
     }
 
     @Test
