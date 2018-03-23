@@ -10,7 +10,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>docker-java-spring-boot-starter</module>
-        <module>docker-java-spring-boot-autoconfigure</module>
     </modules>
 
     <properties>
@@ -55,11 +54,12 @@
 
     <repositories>
         <repository>
-            <id>test-nexus</id>
+            <id>snapshots-docker-java</id>
             <name>test</name>
             <url>https://oss.sonatype.org/content/groups/public/</url>
             <snapshots>
                 <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
             </snapshots>
         </repository>
     </repositories>

@@ -10,14 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>docker-java-spring-boot-starter</artifactId>
-
-    <dependencies>
-        <dependency>
-            <groupId>top.shareall</groupId>
-            <artifactId>docker-java-spring-boot-autoconfigure</artifactId>
-            <version>${starter.version}</version>
-        </dependency>
-    </dependencies>
+    <packaging>jar</packaging>
 
     <developers>
         <developer>
