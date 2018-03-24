@@ -1,9 +1,7 @@
-# docker-java-spring-boot  ![Travis CI](https://travis-ci.org/jliu666/docker-java-spring-boot.svg?branch=master)  [![Coverage Status](https://coveralls.io/repos/github/jliu666/docker-java-spring-boot/badge.svg?branch=master)](https://coveralls.io/github/jliu666/docker-java-spring-boot?branch=master)
+# docker-api-spring-boot  ![Travis CI](https://travis-ci.org/jliu666/docker-api-spring-boot.svg?branch=master)  [![Coverage Status](https://coveralls.io/repos/github/jliu666/docker-api-spring-boot/badge.svg?branch=master)](https://coveralls.io/github/jliu666/docker-api-spring-boot?branch=master)
 
-docker-java-spring-boot makes it easy to use [docker-java](https://github.com/docker-java/docker-java) in your spring boot project. You can learn more about [docker-java](https://github.com/docker-java/docker-java) at here.
+docker-api-spring-boot makes it easy to use [docker-java](https://github.com/docker-java/docker-java) or [docker-client](https://github.com/spotify/docker-client) in your spring boot project. You can learn more about [docker-java](https://github.com/docker-java/docker-java) at here.
 
-# Why not named docker-client-spring-boot?
-[docker-java](https://github.com/docker-java/docker-java) is a project about docker api. But [docker-client](https://github.com/spotify/docker-client) is another project. In order not to confuse the two items, So the project is named docker-java-spring-boot.
 
 # Goal
 1. Inject the DockerClient compent to spring context in a easy way.
@@ -17,7 +15,7 @@ docker-java-spring-boot makes it easy to use [docker-java](https://github.com/do
 Add it to your project's pom:
 ```xml
 <dependency>
-    <artifactId>docker-java-spring-boot-starter</artifactId>
+    <artifactId>docker-api-spring-boot-starter</artifactId>
     <groupId>top.shareall</groupId>
     <version>1.0-SNAPSHOT</version>
 </dependency>

@@ -5,16 +5,15 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>top.shareall</groupId>
-    <artifactId>docker-java-spring-boot</artifactId>
+    <artifactId>docker-api-spring-boot</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>docker-java-spring-boot-starter</module>
+        <module>docker-api-spring-boot-starter</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <docker-java.version>3.1.0-SNAPSHOT</docker-java.version>
         <starter.version>1.0-SNAPSHOT</starter.version>
     </properties>
 
@@ -23,34 +22,6 @@
         <artifactId>spring-boot-starters</artifactId>
         <version>2.0.0.RELEASE</version>
     </parent>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-autoconfigure</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.github.docker-java</groupId>
-            <artifactId>docker-java</artifactId>
-            <version>${docker-java.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
-
 
     <repositories>
         <repository>
@@ -168,12 +139,12 @@
 
     <scm>
         <connection>
-            scm:git:https://github.com/jliu666/docker-java-spring-boot.git
+            scm:git:https://github.com/jliu666/docker-api-spring-boot.git
         </connection>
         <developerConnection>
-            scm:git:https://github.com/jliu666/docker-java-spring-boot.git
+            scm:git:https://github.com/jliu666/docker-api-spring-boot.git
         </developerConnection>
-        <url>https://github.com/jliu666/docker-java-spring-boot</url>
+        <url>https://github.com/jliu666/docker-api-spring-boot</url>
         <tag>1.0</tag>
     </scm>
 

@@ -1,1 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=top.shareall.docker.spring.boot.starter.configuration.DockerJavaAutoConfiguration
