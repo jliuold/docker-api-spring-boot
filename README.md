@@ -1,10 +1,10 @@
 # docker-api-spring-boot  ![Travis CI](https://travis-ci.org/jliu666/docker-api-spring-boot.svg?branch=master)  [![Coverage Status](https://coveralls.io/repos/github/jliu666/docker-api-spring-boot/badge.svg?branch=master)](https://coveralls.io/github/jliu666/docker-api-spring-boot?branch=master)
 
-docker-api-spring-boot makes it easy to use [docker-java](https://github.com/docker-java/docker-java) or [docker-client](https://github.com/spotify/docker-client) in your spring boot project. You can learn more about [docker-java](https://github.com/docker-java/docker-java) at here.
+docker-api-spring-boot makes it easy to use [docker-java](https://github.com/docker-java/docker-java) or [docker-client](https://github.com/spotify/docker-client) in your spring boot project. You can learn more about [docker-java](https://github.com/docker-java/docker-java) here, and more about [docker-client](https://github.com/spotify/docker-client) here
 
 
 # Goal
-1. Inject the DockerClient compent to spring context in a easy way.
+1. Inject the DockerClient component to spring context in a easy way.
 2. Fix the error about dependencies by using snapshot.
 3. Integrate the configuration into spring boot configuration. Then users can configure when start the jar or war.
 
@@ -18,6 +18,22 @@ Add it to your project's pom:
     <artifactId>docker-api-spring-boot-starter</artifactId>
     <groupId>top.shareall</groupId>
     <version>1.0-SNAPSHOT</version>
+</dependency>
+```
+If you want to use docker-java in your project, add this to your project pom:
+```xml
+<dependency>
+    <groupId>com.github.docker-java</groupId>
+    <artifactId>docker-java</artifactId>
+    <version>3.1.0-SNAPSHOT</version>
+   </dependency>
+```
+Or you want to use docker-client in your project:
+```xml
+<dependency>
+    <groupId>com.spotify</groupId>
+    <artifactId>docker-client</artifactId>
+    <version>3.5.12</version>
 </dependency>
 ```
 
