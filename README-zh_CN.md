@@ -1,6 +1,5 @@
 # docker-api-spring-boot  ![Travis CI](https://travis-ci.org/jliu666/docker-api-spring-boot.svg?branch=master)  [![Coverage Status](https://coveralls.io/repos/github/jliu666/docker-api-spring-boot/badge.svg?branch=master)](https://coveralls.io/github/jliu666/docker-api-spring-boot?branch=master)  [![中文](https://img.shields.io/badge/language-English-green.svg)](./README.md)
 
-[English](./README.md)
 
 随着Spring Boot和Docker越来越流行，所以这个项目诞生了。Docker-api-spring-boot-starter可以让我们以一种更简单的方式使用Docker API。
 
