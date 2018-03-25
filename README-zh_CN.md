@@ -1,4 +1,4 @@
-# docker-api-spring-boot  ![Travis CI](https://travis-ci.org/jliu666/docker-api-spring-boot.svg?branch=master)  [![Coverage Status](https://coveralls.io/repos/github/jliu666/docker-api-spring-boot/badge.svg?branch=master)](https://coveralls.io/github/jliu666/docker-api-spring-boot?branch=master) 
+# docker-api-spring-boot  ![Travis CI](https://travis-ci.org/jliu666/docker-api-spring-boot.svg?branch=master)  [![Coverage Status](https://coveralls.io/repos/github/jliu666/docker-api-spring-boot/badge.svg?branch=master)](https://coveralls.io/github/jliu666/docker-api-spring-boot?branch=master)  [![中文](https://img.shields.io/badge/language-English-green.svg)](./README.md)
 
 [English](./README.md)
 
