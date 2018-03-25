@@ -1,13 +1,14 @@
-# docker-api-spring-boot  ![Travis CI](https://travis-ci.org/jliu666/docker-api-spring-boot.svg?branch=master)  [![Coverage Status](https://coveralls.io/repos/github/jliu666/docker-api-spring-boot/badge.svg?branch=master)](https://coveralls.io/github/jliu666/docker-api-spring-boot?branch=master)
-
-docker-api-spring-boot makes it easy to use [docker-java](https://github.com/docker-java/docker-java) or [docker-client](https://github.com/spotify/docker-client) in your spring boot project. You can learn more about [docker-java](https://github.com/docker-java/docker-java) here, and more about [docker-client](https://github.com/spotify/docker-client) here
+# docker-api-spring-boot  [![Travis CI](https://travis-ci.org/jliu666/docker-api-spring-boot.svg?branch=master)](https://travis-ci.org/jliu666/docker-api-spring-boot)  [![Coverage Status](https://coveralls.io/repos/github/jliu666/docker-api-spring-boot/badge.svg?branch=master)](https://coveralls.io/github/jliu666/docker-api-spring-boot?branch=master)  [![中文](https://img.shields.io/badge/language-%E4%B8%AD%E6%96%87-green.svg)](./README-zh_CN.md)
 
 
-# Goal
-1. Inject the DockerClient component to spring context in a easy way.
-2. Fix the error about dependencies by using snapshot.
-3. Integrate the configuration into spring boot configuration. Then users can configure when start the jar or war.
+Both Docker and Spring Boot become more and more popular. So the docker-api-spring-boot-starter comes. 
+It makes easy to start a Spring Boot project with Docker API.
 
+0. Docker API is a restful api to operate docker on network.
+1. [Docker-java](https://github.com/docker-java/docker-java) is one wrapper of the Docker API.
+2. [Docker-client](https://github.com/spotify/docker-client) is another wrapper of the Docker API.
+
+The starter wrappers the configuration of docker-java and docker-client. So just add the maven dependency of docker-java or docker-client to your project and code happily.  
 
 # Usage
 
@@ -26,7 +27,7 @@ If you want to use docker-java in your project, add this to your project pom:
     <groupId>com.github.docker-java</groupId>
     <artifactId>docker-java</artifactId>
     <version>3.1.0-SNAPSHOT</version>
-   </dependency>
+</dependency>
 ```
 Or you want to use docker-client in your project:
 ```xml
