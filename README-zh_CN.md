@@ -40,6 +40,28 @@ docker-client:
 ## Warning
 *由于目前docker-java的3.0.14版本存在依赖问题，所以此处采用了snapshot版本。所以你的maven配置必须启用快照版本*   
 
+
+### 如何使用snapshot版本
+如果你使用了一个没有snapshot的maven镜像，你可以像下面的方式配置你的maven
+
+以华为镜像为例:
+将下面的设置添加到maven配置文件的servers节点中。
+```xml
+<server>
+    <id>huaweicloud</id>
+    <username>anonymous</username>
+    <password>devcloud</password>
+</server>
+```
+将下面的设置添加到maven配置文件中的mirrors节点中。
+```xml
+<mirror>
+    <id>huaweicloud</id>
+    <mirrorOf>*,!snapshots</mirrorOf>
+    <url>https://repo.huaweicloud.com/repository/maven/</url>
+</mirror>
+```
+
 ## 配置
 项目将docker-java和docker-client的配置统一到Spring Boot中，你可以通过下面的方式来配置docker-java
 ```yml

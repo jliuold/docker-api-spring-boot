@@ -25,13 +25,14 @@
 
     <repositories>
         <repository>
-            <id>snapshots-docker-java</id>
+            <id>snapshots</id>
             <name>test</name>
             <url>https://oss.sonatype.org/content/groups/public/</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
             </snapshots>
+            <releases><enabled>false</enabled></releases>
         </repository>
     </repositories>
 

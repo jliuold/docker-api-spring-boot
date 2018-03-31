@@ -41,6 +41,30 @@ Or you want to use docker-client in your project:
 ## Warning
 *Because the docker-java's last release has a error about dependency. So you must ensure your project can download snapshot version.*   
 
+### How to enable snapshot version
+If you want to enable snapshot version with a maven repo mirror without snapshot. You can configure maven like below.
+
+Use Huawei maven repo:
+Add below to maven setting file's servers node.
+```xml
+<server>
+    <id>huaweicloud</id>
+    <username>anonymous</username>
+    <password>devcloud</password>
+</server>
+```
+Add below to mavem setting file's mirrors node.
+```xml
+<mirror>
+    <id>huaweicloud</id>
+    <mirrorOf>*,!snapshots</mirrorOf>
+    <url>https://repo.huaweicloud.com/repository/maven/</url>
+</mirror>
+```
+
+The snapshots repository is defined in the pom.xml of the starter.
+
+
 ## Configuration
 You can config docker-java in your spring-boot configuration. If you use deafault, of course you needn't to config it.
 A spring-boot configuration like this;
