@@ -53,7 +53,7 @@ Add below to maven setting file's servers node.
     <password>devcloud</password>
 </server>
 ```
-Add below to mavem setting file's mirrors node.
+Add below to maven setting file's mirrors node.
 ```xml
 <mirror>
     <id>huaweicloud</id>
