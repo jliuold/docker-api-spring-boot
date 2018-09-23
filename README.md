@@ -26,7 +26,6 @@ If you want to use docker-java in your project, add this to your project pom:
 <dependency>
     <groupId>com.github.docker-java</groupId>
     <artifactId>docker-java</artifactId>
-    <version>3.1.0-SNAPSHOT</version>
 </dependency>
 ```
 Or you want to use docker-client in your project:
@@ -34,7 +33,6 @@ Or you want to use docker-client in your project:
 <dependency>
     <groupId>com.spotify</groupId>
     <artifactId>docker-client</artifactId>
-    <version>3.5.12</version>
 </dependency>
 ```
 
