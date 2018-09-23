@@ -1,4 +1,4 @@
-# docker-api-spring-boot  [![Travis CI](https://travis-ci.org/jliu666/docker-api-spring-boot.svg?branch=master)](https://travis-ci.org/jliu666/docker-api-spring-boot)  [![Coverage Status](https://coveralls.io/repos/github/jliu666/docker-api-spring-boot/badge.svg?branch=master)](https://coveralls.io/github/jliu666/docker-api-spring-boot?branch=master)  [![中文](https://img.shields.io/badge/language-%E4%B8%AD%E6%96%87-green.svg)](./README-zh_CN.md)
+# docker-api-spring-boot  [![Travis CI](https://travis-ci.org/jliu666/docker-api-spring-boot.svg?branch=master)](https://travis-ci.org/jliu666/docker-api-spring-boot)  [![codecov](https://codecov.io/gh/jliu666/docker-api-spring-boot/branch/master/graph/badge.svg)](https://codecov.io/gh/jliu666/docker-api-spring-boot)  [![中文](https://img.shields.io/badge/language-%E4%B8%AD%E6%96%87-green.svg)](./README-zh_CN.md)
 
 
 Both Docker and Spring Boot become more and more popular. So the docker-api-spring-boot-starter comes. 

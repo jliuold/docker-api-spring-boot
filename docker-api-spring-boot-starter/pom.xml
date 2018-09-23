@@ -13,7 +13,7 @@
     <packaging>jar</packaging>
 
     <properties>
-        <docker-java.version>3.1.0-SNAPSHOT</docker-java.version>
+        <docker-java.version>3.1.0-rc-5</docker-java.version>
         <docker-client.version>3.5.12</docker-client.version>
     </properties>
 
